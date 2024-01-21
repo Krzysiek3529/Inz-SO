@@ -1,0 +1,39 @@
+#!/usr/bin/python3
+def dodawanie(x, y):
+    return x + y
+
+def odejmowanie(x, y):
+    return x - y
+
+def mnozenie(x, y):
+    return x * y
+
+def dzielenie(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return ("Nie dziel przez zero")
+
+print("Kalkulator. ")
+
+print("1. Dodawanie.")
+print("2. Odejmowanie.")
+print("3. Mnożenie.")
+print("4. Dzielenie.")
+
+wybor = input("Podaj numer wybranej operacji: ")
+
+liczba1 = float(input("Podaj x."))
+liczba2 = float(input("Podaj y."))
+ 
+if wybor == '1':
+    print("Wynik dodawania: ", dodawanie(liczba1, liczba2))
+elif wybor == '2':
+    print("Wynik odejmowania: ", odejmowanie(liczba1, liczba2))
+elif wybor == '3':
+    print("Wynik mnozenia: ", mnozenie(liczba1, liczba2))
+elif wybor=='4': 
+    print("Wynik dzielenia: ", dzielenie(liczba1, liczba2))
+else: 
+    print("Niepoprawny numer opcji.")
+
